@@ -4,11 +4,10 @@
 This is an app that run through NODE.js to get the database from schema.sql and create a table of items and display it in the HTML. The app allows user to add an item and delete it from the mainhandlebars.
 
 # Techonologise used
-    - GitHub: to publish the 
-    - ORM:
-    - NODE:
-    - MySql: for database and schema
-    - Handlebars:
+    - GitHub: to publish the repository.
+    - ORM: is designed to virtually wrap around a relational database.
+    - NODE: 
+    - MySql: used for database.
 
 # Code snippet
 ```js
@@ -96,7 +95,7 @@ var orm = {
 module.exports = orm;
 ```
 
-These codes will execute the nesccasry to call out the functions from burger controllers such as selecting a specigic burger to update or delete from the database.
+These codes will execute the nesccasry MySQL commands from burger_controllers.js. So the user can select a specific burger from the database and update or delete from the database.
 
 # Author Links
 [LinkedIn](www.linkedin.com/in/tu-tai-le-2a9646139)
