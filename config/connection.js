@@ -1,4 +1,4 @@
-
+//Connection.js to Setup the code to connect NODE to MySQL
 var mysql = require('mysql');
 var connection;
 
