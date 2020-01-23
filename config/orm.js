@@ -1,3 +1,4 @@
+// Set Up ORM.JS that will execute the necessary MySQL commands in the controllers
 var connection = require('./connection');
 
 function addQuestionSymbol(num) {
