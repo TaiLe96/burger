@@ -1,22 +1,29 @@
-var orm = require("../config/orm");
+const orm = require('../config/orm');
 
 var burger = {
-    all: function(cb){
-        orm.all("burger", function(res){
-            cb(res);
-        })
-    },
-    create: function(cols, vals, cb){
-        orm.create("burger", cols, vals, function(res){
-            cb(res);
-        });
-    },
-    update: function(objColVals, condition, cb){
-        orm.update("burger", objColVals, condition, function(res){
-            cb(res);
-        });
-    }
+  selectAll: function(cb) {
+    orm.selectAll('burger', function(res) {
+      cb(res);
+    });
+  },
+
+  insertOne: function(cols, vals, cb) {
+    orm.insertOne('burger', cols, vals, function(res) {
+      cb(res);
+    });
+  },
+
+  updateOne: function(objColVals, condition, cb) {
+    orm.updateOne('burger', objColVals, condition, function(res) {
+      cb(res);
+    });
+  },
+
+  deleteOne: function(condition, cb) {
+    orm.deleteOne('burger', condition, function(res) {
+      cb(res);
+    });
+  }
 };
 
-// Export the database function for the controller (burgers_controller.js)
 module.exports = burger;
