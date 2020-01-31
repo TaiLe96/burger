@@ -15,10 +15,10 @@ if (process.env.JAWDB_URL) {
 
 connection.connect(function(err) {
   if (err) {
-    console.log('burger_db connecting err: ' + err.stack);
+    console.log('burgers_db connecting err: ' + err.stack);
     return;
   }
-  console.log('Connected burger_db as id: ' + connection.threadId);
+  console.log('Connected burgers_db as id: ' + connection.threadId);
 });
 
 module.exports = connection;
